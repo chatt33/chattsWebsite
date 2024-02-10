@@ -56,3 +56,14 @@ function hasWon(){
         }
     }
 }
+
+function newgame(){
+    for(var i = 1; i < 10; i++ ){
+        var button = "button" + i + "TTT";
+        console.log(button);
+        document.getElementById(button).innerText = ".";
+    }
+    document.getElementById("winner").innerText = "";
+    playersturn = "X";
+    marksPlaced = 0;
+}

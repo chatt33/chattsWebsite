@@ -12,7 +12,7 @@ p{
 h1{
     margin-left: 5vw;
 }
-#navButtons{
+#navButtons,#newgameButton{
     width: 20vw;
     height:4vh;
     background-color: lightblue;
@@ -25,7 +25,7 @@ h1{
     margin-left: 8vw;
 }
 
-#navButtons:hover{
+#navButtons:hover, #newgameButton:hover{
     background-color:bisque;
 }
 
