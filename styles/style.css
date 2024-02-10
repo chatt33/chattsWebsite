@@ -32,16 +32,13 @@ h1{
 
 
 
-/*TICTACTOE*/
 .tictactoeButton{
     background-color: antiquewhite;
     width:12vh;
     height:12vh;
 }
 
-#button1TTT,#button2TTT,#button3TTT,#button4TTT,#button5TTT,#button6TTT,#button7TTT,#button8TTT,#button9TTT{
 
-}
 #button1TTT,#button4TTT,#button7TTT{
     margin-left: 38vw;
     justify-content: center;
