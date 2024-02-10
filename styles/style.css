@@ -37,6 +37,9 @@ h1{
     width:12vh;
     height:12vh;
 }
+.tictactoeButton:hover{
+    background-color: lightblue;
+}
 
 
 #button1TTT,#button4TTT,#button7TTT{

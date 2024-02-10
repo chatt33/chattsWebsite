@@ -16,7 +16,44 @@ function handleButton(number){
 }
 
 function checkWinner(){
-    for(var i = 0; i <= 9; i = i +3){
+    if(document.getElementById("button1TTT").innerText == document.getElementById("button2TTT").innerText && document.getElementById("button2TTT").innerText == document.getElementById("button3TTT").innerText && document.getElementById("button1TTT").innerText != "."){
+        document.getElementById("winner").innerText = "Winner:" + document.getElementById("button1TTT").innerText;
+        hasWon();
+    } else if(document.getElementById("button6TTT").innerText == document.getElementById("button5TTT").innerText && document.getElementById("button5TTT").innerText == document.getElementById("button6TTT").innerText && document.getElementById("button4TTT").innerText != "."){
+        document.getElementById("winner").innerText = "Winner:" + document.getElementById("button4TTT").innerText;
+        hasWon();
+    } else if(document.getElementById("button7TTT").innerText == document.getElementById("button8TTT").innerText && document.getElementById("button8TTT").innerText  == document.getElementById("button9TTT").innerText && document.getElementById("button9TTT").innerText != "."){
+        document.getElementById("winner").innerText = "Winner:" + document.getElementById("button8TTT").innerText;
+        hasWon();
+    } else if(document.getElementById("button1TTT").innerText == document.getElementById("button4TTT").innerText && document.getElementById("button4TTT").innerText == document.getElementById("button7TTT").innerText && document.getElementById("button7TTT").innerText != "."){
+        document.getElementById("winner").innerText = "Winner:" + document.getElementById("button4TTT").innerText;
+        hasWon();
+    } else if(document.getElementById("button2TTT").innerText == document.getElementById("button5TTT").innerText && document.getElementById("button5TTT").innerText == document.getElementById("button8TTT").innerText && document.getElementById("button8TTT").innerText != "."){
+        document.getElementById("winner").innerText = "Winner:" + document.getElementById("button5TTT").innerText;
+        hasWon();
+    } else if(document.getElementById("button3TTT").innerText == document.getElementById("button6TTT").innerText && document.getElementById("button9TTT").innerText == document.getElementById("button6TTT").innerText && document.getElementById("button6TTT").innerText != "."){
+        document.getElementById("winner").innerText = "Winner:" + document.getElementById("button6TTT").innerText;
+        hasWon();
+    } else if(document.getElementById("button1TTT").innerText == document.getElementById("button5TTT").innerText && document.getElementById("button5TTT").innerText == document.getElementById("button9TTT").innerText && document.getElementById("button9TTT").innerText != "."){
+        document.getElementById("winner").innerText = "Winner:" + document.getElementById("button5TTT").innerText;
+        hasWon();
+    }  else if(document.getElementById("button3TTT").innerText == document.getElementById("button5TTT").innerText && document.getElementById("button5TTT").innerText == document.getElementById("button7TTT").innerText && document.getElementById("button7TTT").innerText != "."){
+        document.getElementById("winner").innerText = "Winner:" + document.getElementById("button5TTT").innerText;
+        hasWon();
+    } 
+}
+
+
+
+
+
+function hasWon(){
+    for(var i = 1; i < 10; i++ ){
         var button = "button" + i + "TTT";
+        console.log(button);
+        if(document.getElementById(button).innerText == "."){
+            document.getElementById(button).innerText = "°";
+            console.log(button);
+        }
     }
 }
