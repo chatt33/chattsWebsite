@@ -13,7 +13,7 @@ h1{
     margin-left: 5vw;
 }
 #navButtons{
-    width: 22vw;
+    width: 20vw;
     height:4vh;
     background-color: lightblue;
     font-weight: bolder;
@@ -22,9 +22,30 @@ h1{
 }
 
 .leftnavButton{
-    margin-left: 5vw;
+    margin-left: 8vw;
 }
 
 #navButtons:hover{
     background-color:bisque;
 }
+
+
+
+
+/*TICTACTOE*/
+.tictactoeButton{
+    background-color: antiquewhite;
+    width:12vh;
+    height:12vh;
+}
+
+#button1TTT,#button2TTT,#button3TTT,#button4TTT,#button5TTT,#button6TTT,#button7TTT,#button8TTT,#button9TTT{
+
+}
+#button1TTT,#button4TTT,#button7TTT{
+    margin-left: 38vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
