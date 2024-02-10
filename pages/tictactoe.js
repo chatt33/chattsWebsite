@@ -16,6 +16,7 @@ function handleButton(number){
 }
 
 function checkWinner(){
+    console.log("check winner was reached");
     if(document.getElementById("button1TTT").innerText == document.getElementById("button2TTT").innerText && document.getElementById("button2TTT").innerText == document.getElementById("button3TTT").innerText && document.getElementById("button1TTT").innerText != "."){
         document.getElementById("winner").innerText = "Winner:" + document.getElementById("button1TTT").innerText;
         hasWon();
@@ -44,10 +45,8 @@ function checkWinner(){
 }
 
 
-
-
-
 function hasWon(){
+    console.log("has won was reached");
     for(var i = 1; i < 10; i++ ){
         var button = "button" + i + "TTT";
         console.log(button);
